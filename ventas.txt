@@ -1,0 +1,7 @@
+{
+  "cliente": "Francisco Perez",
+  "producto": "Pack de cocas",
+  "cantidad": 16,
+  "precio": 285000,
+  "total": 285000
+}
