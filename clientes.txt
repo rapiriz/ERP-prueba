@@ -2,3 +2,8 @@ Cliente: Juan Perez
 DNI: 40111222
 Telefono: 2914556677
 Estado: Activo
+
+Cliente: Claudio Gómez
+DNI: 39110292
+Telefono: 2912364301
+Estado: Activo
