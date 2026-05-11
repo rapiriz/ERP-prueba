@@ -1,0 +1,7 @@
+Producto: Coca zero
+Stock: 15
+Precio: 3500
+
+Producto: Puchos 
+Stock: 10
+Precio: 8000
