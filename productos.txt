@@ -1,0 +1,5 @@
+Producto001, Camisa, 10, 25.00
+Producto002, Pantalón, 5, 40.00
+Producto003, Zapatos, 8, 55.00
+Producto004, Gorra, 12, 15.00
+Producto005, Mochila, 3, 60.00
