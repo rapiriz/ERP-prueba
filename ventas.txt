@@ -1,0 +1,4 @@
+Venta N° 105
+Cliente: Juan Pérez
+Total: $150000
+Estado: Pagada
