@@ -3,7 +3,7 @@
 Grupo: G3
 
 Rol Scrum actual:
-- Developer
+- Programadorr
 
 Intereses:
 - Stock
