@@ -1,0 +1,49 @@
+Descripción del conflicto 
+
+
+Para esta etapa trabajamos en conjunto con un compañero del grupo G2. El objetivo fue simular un conflicto real de Git y resolverlo correctamente.
+
+¿Qué hicimos?
+Ambos integrantes modificamos el mismo archivo (por ejemplo README.md) desde nuestras ramas individuales, sin que el segundo alumno hiciera git pull antes de pushear sus cambios.
+
+Paso a paso
+Alumno A (arranca primero):
+
+Modifica una línea del archivo README.md
+
+Ejecuta:
+bashgit add .
+git commit -m "feat: modificación en README"
+git push origin feature/g2-nombre-alumnoA
+
+Alumno B (arranca segundo, sin hacer pull):
+
+Modifica la misma línea del mismo archivo
+
+Ejecuta git add y git commit
+
+Al intentar hacer git push, GitHub lo rechaza con el error:
+! [rejected] - failed to push some refs
+hint: Updates were rejected because the remote contains work that you do not have locally.
+
+¿Por qué ocurre este error?
+Porque el Alumno B no tenía en su computadora los cambios que el Alumno A ya había subido a GitHub. Git no puede combinar los cambios automáticamente ya que ambos modificaron la misma línea.
+
+¿Cómo se resuelve?
+El Alumno B ejecuta:
+bashgit pull origin develop-g2
+Git marca el conflicto dentro del archivo con la siguiente estructura:
+
+(cambios del Alumno B)
+
+=======
+
+(cambios del Alumno A)
+>>>>>>> origin/develop-g2
+El Alumno B edita el archivo manualmente, decide qué cambios conservar, elimina las marcas de conflicto y ejecuta:
+bashgit add .
+git commit -m "fix: resolución de conflicto en README"
+git push origin feature/g2-sofia-pk
+
+¿Qué aprendimos?
+Que es fundamental hacer siempre git pull antes de empezar a trabajar y antes de hacer git push, especialmente cuando varios integrantes trabajan sobre los mismos archivos. Esto evita conflictos innecesarios y mantiene el historial limpio.
