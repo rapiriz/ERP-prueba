@@ -35,6 +35,8 @@ bashgit pull origin develop-g2
 Git marca el conflicto dentro del archivo con la siguiente estructura:
 
 (cambios del Alumno B)
+segundo intento del conflicto, ya que al cambiarme de rama con "git checkout" el pull es automático, te cambia al estado actual de la rama en el repo remoto.
+
 
 =======
 
