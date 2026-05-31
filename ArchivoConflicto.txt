@@ -4,16 +4,16 @@ Descripción del conflicto
 Para esta etapa trabajamos en conjunto con un compañero del grupo G2. El objetivo fue simular un conflicto real de Git y resolverlo correctamente.
 
 ¿Qué hicimos?
-Ambos integrantes modificamos el mismo archivo (por ejemplo README.md) desde nuestras ramas individuales, sin que el segundo alumno hiciera git pull antes de pushear sus cambios.
+Ambos integrantes modificamos el mismo archivo desde nuestras ramas individuales, sin que el segundo alumno hiciera git pull antes de pushear sus cambios.
 
 Paso a paso
 Alumno A (arranca primero):
 
-Modifica una línea del archivo README.md
+Modifica una línea de este archivo 
 
 Ejecuta:
 bashgit add .
-git commit -m "feat: modificación en README"
+git commit -m "feat: modificación de ArchivoConflicto"
 git push origin feature/g2-nombre-alumnoA
 
 Alumno B (arranca segundo, sin hacer pull):
@@ -44,8 +44,10 @@ segundo intento del conflicto, ya que al cambiarme de rama con "git checkout" el
 >>>>>>> origin/develop-g2
 El Alumno B edita el archivo manualmente, decide qué cambios conservar, elimina las marcas de conflicto y ejecuta:
 bashgit add .
-git commit -m "fix: resolución de conflicto en README"
+git commit -m "fix: resolución de conflicto en ArchivoConflicto"
 git push origin feature/g2-sofia-pk
 
 ¿Qué aprendimos?
 Que es fundamental hacer siempre git pull antes de empezar a trabajar y antes de hacer git push, especialmente cuando varios integrantes trabajan sobre los mismos archivos. Esto evita conflictos innecesarios y mantiene el historial limpio.
+
+
